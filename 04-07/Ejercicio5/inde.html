@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="EMBLEMA-USFX.jpg" alt="Imagen no encontrada" />
+        </div>
+        <div class="title">
+          <h1>Univerdad USFX</h1>
+          <h2>Facultad de Tecnologia</h2>
+          <p>Carrera Ing Sistemas</p>
+          <p>Semestre 1-202</p>
+        </div>
+        <div class="region">
+          <p class="rojo">Sucr</p>
+          <p class="amarillo">E-Boliv</p>
+          <p class="verde">ia 2024</p>
+        </div>
+      </div>
+
+      <dialog id="myDialog">
+        <p>Bienvenido a la pagina de ejercicios</p>
+        <p>Bienvenido a la pagina de ejercicios</p>
+        <p>Bienvenido a la pagina de ejercicios</p>
+        <p>Bienvenido a la pagina de ejercicios</p>
+        <p>Bienvenido a la pagina de ejercicios</p>
+        <button id="closeDialog">Cerrar</button>
+      </dialog>
+
+      <div class="content">
+        <div class="botones">
+          <button onclick="mostrarModal()" >Ejercicio 1</button>
+          <!-- // <a class="buttom" ">Ejercicio 1</a> -->
+          <a class="buttom" >Ejercicio 2</a>
+          <a class="buttom" href="#">Ejercicio 3</a>
+          <a class="buttom" href="#">Ejercicio 4</a>
+        </div>
+        <div class="datos">
+          <p>Nombre de Estudiante: Max Rodas</p>
+          <p>Ejercicos Elegidos</p>
+          <ul>
+            <li>Ejercicio 1</li>
+            <li>Ejercicio 2</li>
+            <li>Ejercicio 3</li>
+            <li>Ejercicio 4</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>
+
+<style>
+  dialog{
+    background-color: red;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  img {
+    width: 50px;
+  }
+  h1 {
+    color: red;
+  }
+  h2 {
+    color: blue;
+  }
+  .rojo {
+    color: red;
+  }
+  .amarillo {
+    color: yellow;
+  }
+  .verde {
+    color: rgb(2, 146, 45);
+  }
+  .container {
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    height: 200px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(156, 177, 210);
+  }
+  .content {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+  }
+  .botones {
+    width: 120px;
+    background-color: rgb(50, 50, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap: 2px;
+  }
+  .datos {
+    width: 780px;
+    background-color: rgb(179, 178, 178);
+    padding-left: 10px;
+  }
+  .logo {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+  }
+  .region {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+  }
+  .title {
+    width: 560px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    gap: -40px;
+  }
+  .buttom {
+    background-color: rgb(255, 255, 255);
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  img{
+    
+  }
+</style>
