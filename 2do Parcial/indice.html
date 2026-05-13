@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav id="barra">
+        <div class="left">
+          <button class="b" id="inicio" onclick="Datos()">Inicio</button>
+          <button class="b" id="pregunta1" onclick="Pregunta1()">
+            Pregunta 1
+          </button>
+          <button class="b" onclick="Pregunta2()">Pregunta 2</button>
+          <button class="b">Pregunta 3</button>
+          <button class="b">Pregunta 4</button>
+        </div>
+        <div class="right">
+          <button onclick="Menu()">Menu</button>
+        </div>
+      </nav>
+      <div class="content" id="contenido">
+        <h1>Segundo examen parcial de Sis256</h1>
+        <p class="nombre">Nombre Estudiante: Max Rodas</p>
+        <p class="cu">CU: 111-461</p>
+        <p class="fecha">Fecha: 13/05/2026</p>
+        <p class="vistas">Numero de Vistas</p>
+      </div>
+      <button onclick="mostrarModal('hola')">mostrar Modal</button>
+      <footer id="">
+        <ul id="historial">
+          <li>hola</li>
+        </ul>
+      </footer>
+    </div>
+    <dialog id="mimodal">
+        <div id="modalContent">
+            Hola Mundo
+        </div>
+        <button onclick="cerrarModal()">Cerrar</button>
+    </dialog>
+  </body>
+</html>
+
+<script src="script.js"></script>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    border: 3px blue;
+    border-style: double;
+  }
+  nav {
+    background-color: gray;
+  }
+  footer {
+    background-color: rgb(184, 117, 17);
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  .right {
+    width: 50%;
+    text-align: end;
+    justify-content: end;
+  }
+</style>
